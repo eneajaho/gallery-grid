@@ -6,14 +6,12 @@
 
 body{
     background-color: rgba(221, 221, 221, 0.34);
-    display:grid;
-    justify-content: center;
     color: #737373;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-rows: 100px auto 400px auto 50px;
     width: 80%;
     margin: 3rem auto;
@@ -247,16 +245,16 @@ textarea{
 
 
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
     
 .container {
-    grid-template-rows: 100px auto 400px auto 50px;
     width: 90%;
+    grid-template-columns: 100%;
 }
 
 /* Header */
 .header {
-    grid-row: 1 / 2;
+    grid-row: auto;
     flex-direction: column;
 }
 
@@ -269,6 +267,8 @@ ul.menu{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(10, 250px);
     grid-gap: 4rem;
+    width: 90%;
+    margin: auto;
 }
 
 /* Boxes */
@@ -288,7 +288,7 @@ ul.menu{
     grid-column: 1/-1;
 }
 .box--8{
-    grid-row: 4/6;
+    grid-row: auto;
     grid-column: 1/-1;
 }
 
@@ -296,6 +296,13 @@ ul.menu{
 /* About */
 .about{
     width: 90%;
+}
+
+input{
+    width: 100%;
+}
+textarea{
+    width: 100%;
 }
 
 }
