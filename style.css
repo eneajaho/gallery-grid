@@ -15,7 +15,7 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 100px auto 400px auto 50px;
-    width: 1000px;
+    width: 80%;
     margin: 3rem auto;
     grid-row-gap: 4rem;
 }
@@ -243,4 +243,59 @@ textarea{
     display: flex;
     justify-content: center;
     font-size: 1.4rem;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    
+.container {
+    grid-template-rows: 100px auto 400px auto 50px;
+    width: 90%;
+}
+
+/* Header */
+.header {
+    grid-row: 1 / 2;
+    flex-direction: column;
+}
+
+ul.menu{
+    padding: 0;
+}
+
+/* Gallery */
+.gallery{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 250px);
+    grid-gap: 4rem;
+}
+
+/* Boxes */
+.box--1{
+    grid-column: 1;
+    width: 100%;
+}
+.box--2{
+    grid-row: auto;
+    grid-column: 1/-1;
+}
+.box--3{
+    grid-row: auto;
+    grid-column: 1/-1;
+}
+.box--7{
+    grid-column: 1/-1;
+}
+.box--8{
+    grid-row: 4/6;
+    grid-column: 1/-1;
+}
+
+
+/* About */
+.about{
+    width: 90%;
+}
+
 }
