@@ -212,7 +212,7 @@ textarea{
     border: 0;
     font-size: 1.4rem;
     padding: 15px 20px;
-    max-height: 100px;
+    max-height: 150px;
 }
 .btn{
     padding: 1.5rem 5rem;
@@ -266,8 +266,8 @@ ul.menu{
 .gallery{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(10, 250px);
-    grid-gap: 4rem;
-    width: 90%;
+    grid-gap: 3rem;
+    width: 100%;
     margin: auto;
 }
 
@@ -299,10 +299,18 @@ ul.menu{
 }
 
 input{
-    width: 100%;
+    width: 90%;
+    padding: 15px;
 }
 textarea{
-    width: 100%;
+    width: 90%;
 }
 
+.contact {
+    width: 80%;
+}
+
+textarea{
+    width: 90%;
+}
 }
